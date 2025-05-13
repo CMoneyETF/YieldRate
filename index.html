@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ETF 成分股殖利率比較工具</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF 比較工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>ETF 成分股殖利率比較工具</h1>
+    <div class="data-time">資料時間：2025/5/12</div>
+    <div class="note">註解1：成分股殖利率=成分股的現金殖利率*佔比之總和<br>
+  註解2：點擊ETF可以展開看到成分股明細<br> 
+      註解3：不統計國外的公司</div>
+    <table id="etf-table">
+        <thead>
+            <tr>
+                <th>代號 <span class="sort-indicator">↑↓</span></th>
+                <th>ETF名稱 <span class="sort-indicator">↑↓</span></th>
+                <th>成分股殖利率 <span class="sort-indicator">↑↓</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ETF 資料將在這裡動態生成 -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <div class="footer-wrapper">
+    <footer>
+        <p>本工具由 ETF 存股計畫小編製作</p>
+    </footer>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.data-time {
+    width: 100%;
+    max-width: 70%;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.note {
+    width: 100%;
+    max-width: 40%;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin: auto;
+}
+
+table {
+    width: 40%; /* 第一層表格寬度 */
+    margin: 20px auto; /* 置中 */
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #004aad; /* 標題背景顏色 */
+    color: white; /* 標題文字顏色 */
+    cursor: pointer; /* 鼠標懸停時顯示為可點擊 */
+}
+
+.sort-indicator {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
+tr:hover {
+    background-color: #edf4ff;
+}
+
+.details {
+    display: none;
+    background-color: #f9f9f9;
+}
+
+.details table {
+    width: 80%; /* 第二層表格寬度 */
+    border-collapse: collapse;
+}
+
+.details td, .details th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.details th {
+    background-color: #004aad; /* 第二層表格的標題背景顏色 */
+}
+
+.details tr:hover {
+    background-color: #edf4ff; /* 第二層表格的hover效果 */
+}
+
+/* 防止第一層hover影響第二層 */
+.details:hover {
+    background-color: transparent; /* 取消背景顏色 */
+}
+
+
+.footer-wrapper {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 100px;
+    bottom: 0;
+}
+
+.footer-wrapper footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-wrapper p {
+    margin: 0;
+}
+
+/* 響應式設計 */
+@media (max-width: 1200px) {
+    table {
+        width: 100%; /* 移動裝置上表格寬度100% */
+    }
+  
+    .data-time {
+        max-width: 99%;
+    }
+  
+    .note {
+        max-width: 100%;
+    }
+}
